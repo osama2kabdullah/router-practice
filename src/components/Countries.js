@@ -7,7 +7,7 @@ const Countries = () => {
     const [datas, setDatas] = useLoadData('https://restcountries.com/v3.1/all');
     console.log(datas);
     return (
-        <div style={{display: 'grid', gridTemplateColumns: '20% 80%'}} className='m-5'>
+        <div style={{display: 'grid', gridTemplateColumns: '20% 80%'}} className='m-5 bg-gray-100'>
             <div className='flex flex-col'>
                 {
                     datas.map(country=><SideLinks to={`/${country.ccn3}`}>{country.name.common}</SideLinks>)
