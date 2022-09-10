@@ -14,7 +14,7 @@ const Countries = () => {
                 }
                 
             </div>
-            <div>
+            <div className='ml-10 p-8 h-screen' style={{position: 'sticky', top:0, }}>
                 <Outlet></Outlet>
             </div>
         </div>

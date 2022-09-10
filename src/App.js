@@ -14,7 +14,8 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Countries></Countries>}>
-          <Route path='/:countryDetails' element={<CountryDetail></CountryDetail>}></Route>
+          <Route path='/:countryDetails/' element={<CountryDetail></CountryDetail>}>
+          </Route>
         </Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/tourguid' element={<Guide></Guide>}></Route>
