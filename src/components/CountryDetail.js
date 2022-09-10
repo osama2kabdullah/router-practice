@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Outlet, useParams } from 'react-router-dom';
 import useLoadData from '../hooks/useLoadData';
 import SubHeader from './SubHeader';
 
@@ -13,6 +13,7 @@ const CountryDetail = () => {
         <div>
             <SubHeader></SubHeader>
             <h1 className='text-3xl'>{datas?.[0]?.name.common}</h1>
+            <Outlet></Outlet>
         </div>
     );
 };

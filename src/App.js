@@ -7,6 +7,7 @@ import About from './components/About';
 import Guide from './components/Guide';
 import Contact from './components/Contact';
 import CountryDetail from './components/CountryDetail';
+import CountryDeep from './components/CountryDeep';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Countries></Countries>}>
-          <Route path='/:countryDetails/' element={<CountryDetail></CountryDetail>}>
+          <Route path='/:countryDetails' element={<CountryDetail></CountryDetail>}>
+            <Route path='/:countryDetails/:name' element={<CountryDeep></CountryDeep>}></Route>
           </Route>
         </Route>
         <Route path='/about' element={<About></About>}></Route>
