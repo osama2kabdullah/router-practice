@@ -15,8 +15,8 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Countries></Countries>}>
-          <Route path='/:countryDetails' element={<CountryDetail></CountryDetail>}>
-            <Route path='/:countryDetails/:name' element={<CountryDeep></CountryDeep>}></Route>
+          <Route path=':countryDetails' element={<CountryDetail></CountryDetail>}>
+            <Route path=':subdetails' element={<CountryDeep></CountryDeep>}></Route>
           </Route>
         </Route>
         <Route path='/about' element={<About></About>}></Route>
