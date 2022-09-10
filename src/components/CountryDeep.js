@@ -1,12 +1,9 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
 const CountryDeep = () => {
-    const {subdetails} = useParams();
-    
     return (
         <div>
-            <h1 className='text-3xl'>{subdetails}</h1>
+            <h1 className='text-3xl'>This deep dive</h1>
         </div>
     );
 };

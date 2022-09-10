@@ -1,14 +1,11 @@
 import React from 'react';
-import SideLinks from './SideLinks';
+import { Link } from 'react-router-dom';
+import CustomLink from './CustomLink';
 
-const SubHeader = ({data}) => {
-    
+const SubHeader = () => {
     return (
-        <nav className='flex pt-2 pb-2 justify-start'>
-            <SideLinks to={data?.[0]?.ccn3}>basic</SideLinks>
-            <SideLinks to={data?.[0]?.ccn3}>Population</SideLinks>
-            <SideLinks to={data?.[0]?.ccn3}>Map</SideLinks>
-            <SideLinks to={data?.[0]?.ccn3}>Flag</SideLinks>
+        <nav className='flex gap-4 pt-2 pb-2 justify-start'>
+            <Link to='/countryDetails/osama'>Osama</Link>
         </nav>
     );
 };
