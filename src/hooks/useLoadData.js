@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useLoadData = (params) => {
+const useLoadData = (params = 'https://restcountries.com/v3.1/all') => {
     const [datas, setDatas] = useState([]);
     useEffect(()=>{
         fetch(params)
